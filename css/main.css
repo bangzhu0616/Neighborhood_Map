@@ -10,3 +10,9 @@ body {background: #ccc;}
 #searchheader {
     padding: 30px 20px;
 }
+
+#map-canvas {
+	height: 600px;
+	margin: 0px;
+	padding: 0px;
+}jiangyao
