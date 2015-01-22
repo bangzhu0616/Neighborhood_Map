@@ -23,17 +23,19 @@
 
 	<div id="container" class="col-md-12">
 		<hr>
-		<h2 id="greeting" class="greeting">Find places for you:</h2>
+		<h2 id="greeting" class="greeting" data-bind="text: greeting"></h2>
 
 		<div id="map-canvas" class="map-container col-md-8">
 		</div>
 
 		<div class="foursquare-container col-md-4">
-			<h3 id="foursquare-header"></h3>
-			<ul id="foursquare-places" class="foursquare-list"></ul>
+			<h3 id="foursquare-header" data-bind="text: fourhead"></h3>
+			<ul id="foursquare-places" class="foursquare-list" data-bind="foreach: fourlist">
+				<li data-bind="html: four"></li>
+			</ul>
 		</div>
 	</div>
-	
+
 	<script src="js/lib/jquery-1.11.2.min.js"></script>
 	<script src="js/lib/knockout-3.2.0.js"></script>
 	<script src="js/app.js"></script>
